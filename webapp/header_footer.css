@@ -1,0 +1,26 @@
+header{
+  color:#0f3057;
+  font-size:30px;
+  background-color:#41aea9;
+  height:50px;
+  margin:0;
+  padding-top: 20px;
+}
+footer{
+  color:#7d0633;
+  font-size:20px;
+  background-color:#41aea9;
+  height:50px;
+  margin:0;
+  padding-top:30px;
+}
+<header>
+    <h1>Appointment Booking System</h1>
+    <p><img src="mylogo.png" align="right" style="width:60px;height:60px;"></p>
+</header>
+
+<footer>
+
+    <span style="float:left">Quicko Hospital,Block 7,Ziva Apartments,Panajim Goa</span>
+    <span style="float:right">Contact us:supportus@quicko.in|call @+919056784356</span>
+</footer>

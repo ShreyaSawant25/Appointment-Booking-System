@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Appointment Booking System Index Page</title>
+      <style>
+        body{
+          margin: 0px;
+        }
+        h1{
+          color:rgb(255,0,0);
+          font-size: 50px;
+          font-family:sans-serif;
+        }
+        #middle{
+          color:#1d2d50;
+          font-size: 20px;
+        }
+        header{
+          color:#ffbb91;
+          font-size:25px;
+          background-color:#1e5f74;
+          height:60px;
+          padding-top:0px;
+        }
+        footer{
+          color:#ffbb91;
+          font-size:20px;
+          background-color:#1e5f74;
+          height:40px;
+          padding-top:30px;
+        }
+        .button{
+          background-color: #1d2d50;
+          border:none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration:none;
+          font-size: 20px;
+          margin: 4px 2px;
+        }
+      </style>
+
+      <script>
+           function validate()
+          {
+              var password=document.getElementById("pass").value;
+              if(password == "")
+              {
+                alert("Please enter the password.");
+                return false;
+              }
+              else if(password != "admin123")
+              {
+                alert("Please enter correct password.");
+                document.getElementById("pass").value = "";
+                return false;
+              }
+              else
+              {
+                 alert("\n"+"HELLO ADMIN !\n\n"+"YOU ARE BEING LOGGED IN SUCCESSFULLY.");
+                 return true;
+              }
+          }
+      </script>
+    </head>
+    <body background="image1.jpg">
+      <header>
+          <span style="float:left;padding-top:15px;">Appointment Booking System</span>
+          <span style="float:right;background-color:#ffbb91;"><img src="mylogo.png" align="right" style="width:60px;height:60px;"></span>
+      </header>
+      <div id="middle">
+      <br><br><br><br><br>
+      <h1 align="center">WELCOME ADMIN</h1>
+
+      <form align="center">
+	     <label for="pass">PASSWORD</label>
+         <input type="password" id="pass" name="pass"><br><br>
+         <a href="admin.php"><button type="button" class="button" onclick="return validate()">LOGIN</button></a><br><br>
+      </form>
+      <br><br><br><br><br><br><br><br><br><br>
+	  <a href="index.html">RETURN</a><br><br><br>
+    </div>
+    <footer>
+        <span style="float:left">Quicko Hospital,Block 7,Ziva Apartments,Panajim Goa</span>
+        <span style="float:right">Contact us:supportus@quicko.in|call @+919056784356</span>
+    </footer>
+    </body>
+</html>
